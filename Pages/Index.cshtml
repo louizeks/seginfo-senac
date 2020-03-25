@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Trabalho Seg. Info Senac - People IT</h1>
+
+
+
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Exposição de dados de usuários</h1>
+                <p class="lead">
+                    Afim de demonstração ao trabalho de segurança de informação esta página simula um portal onde o usuário já está autenticado e deseja visualizar seus dados pessoais, ele pode fazer clicando no botão dados pessoais no menu superior.
+                </p>
+                <p class="lead">
+                    Podemos notar que a query string passa o código do usuário, isto exemplifica o que acontece muitas vezes em cenários reais, o usuário mal
+                    intencionado pode notar o id, e começar a testar possibilidades, no exemplo temos mais dois usuários cadastros.
+                </p>
+
+                <a class="btn btn-success" asp-area="" asp-page="/dados_pessoais" asp-route-userid="1">Dados Pessoais</a>
+            </div>
+        </div>
+
+        <h3> Obrigado pela passagem de conhecimento professor Osmany Arruda </h3>
+
+    </div>
+

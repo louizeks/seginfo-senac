@@ -1,0 +1,15 @@
+﻿@page
+@model TrabSenac.dados_pessoaisModel
+@{
+    ViewData["Title"] = "dados_pessoais";
+}
+
+
+@if (Model.Usuario == null)
+{
+    <h3>Usuário não encontrado.</h3>
+}
+else
+{
+    <h1>Olá, @Model.Usuario.Nome </h1>
+}
