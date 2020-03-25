@@ -11,5 +11,29 @@
 }
 else
 {
-    <h1>Olá, @Model.Usuario.Nome </h1>
+    
+    <h3> Seus dados: </h3>
+
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control"  id="nome" readonly value="@Model.Usuario.Telefone" />
+    </div>
+
+    <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="text" class="form-control" id="cpf" readonly value="@Model.Usuario.CPF">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" readonly value="@Model.Usuario.Email">
+    </div>
+
+    <div class="form-group">
+        <label for="tel">Telefone:</label>
+        <input type="text" class="form-control"  id="tel" readonly value="@Model.Usuario.Telefone" />
+    </div>
+
+
 }
+
